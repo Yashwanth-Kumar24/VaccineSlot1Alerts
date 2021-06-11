@@ -112,8 +112,8 @@ function getSlots(dc){
 
             document.getElementById("count").innerHTML="Paid Vaccine centres : "+paid+"<br>Free Vaccine Centres : "+free+"<br>Available Vaccine Centers : "+av;
             
-            //console.log(av,dose1,dose2,centrenames)
-            if(dose1==0)
+            
+            if(dose1>0)
                 sendMessage(distname,dose1,centrenames,vaccinename1)
 
             res.forEach((data)=>{
